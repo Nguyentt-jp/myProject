@@ -1,0 +1,22 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+html{
+	background: radial-gradient(#6fd6ff, #bff098);
+	font-family: arial;
+	font-size: 25px;
+}
+a{
+	margin: 50px;
+}
+ul li{
+	padding:5px;
+	border: 4px ;
+	width: 200px;
+}
+.menu{
+	background-color: red;
+}
