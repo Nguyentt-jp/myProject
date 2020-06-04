@@ -3,6 +3,11 @@
 	margin: 0px;
 	box-sizing: border-box;
 }
+h1{
+	margin-left: 250px;
+	position: absolute;
+	padding: 20px;
+}
 
 html{
 	background: radial-gradient(#6fd6ff, #bff098);
@@ -12,11 +17,34 @@ html{
 a{
 	margin: 50px;
 }
+a:hover{
+	background-color: yellow;
+}
 ul li{
 	padding:5px;
 	border: 4px ;
 	width: 200px;
+	margin: 10px;
 }
-.menu{
-	background-color: red;
+img{
+	height: 300px;
+	float: right;
+}
+ul{
+	background-color: #ffffc7;
+	width: 25%;
+	height: 900px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: fixed;
+	float: left;
+
+}
+.content{
+	padding-left: 30px;
+	width: 75%;
+	float: right;
+}
+p{
+	padding-top: 110px;
 }
