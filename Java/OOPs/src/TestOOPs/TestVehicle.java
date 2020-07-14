@@ -5,9 +5,13 @@ import OOPs.Vehicle;
 public class TestVehicle {
 
     public static void main(String[] args) {
-        Vehicle xe1 = new Vehicle("Nguyen Thi Quynh","Future Neo",100,15000000);
+        Vehicle xe1 = new Vehicle("Nguyen Thi Quynh", "Future Neo", 100, 15000000);
 //        xe1.nhap(xe1);
+        //@formatter:off
         xe1.xuat();
         System.out.println(xe1.toString());
+        //@formatter:on
+        int i = 1;
+
     }
 }

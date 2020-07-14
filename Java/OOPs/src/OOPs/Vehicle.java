@@ -47,28 +47,26 @@ public class Vehicle {
     public Vehicle() {
     }
 
-    public Vehicle(String tenChuXe, String loaiXe, int dungTich,  float giaTri) {
+    public Vehicle(String tenChuXe, String loaiXe, int dungTich, float giaTri) {
         this.dungTich = dungTich;
         this.tenChuXe = tenChuXe;
         this.loaiXe = loaiXe;
         this.giaTri = giaTri;
     }
 
-    public float thuePhaiNop(int dungTich, float giaTri){
+    public float thuePhaiNop(int dungTich, float giaTri) {
         float f;
-        if(dungTich<100){
-            f= (float) (giaTri*0.1);
-        }
-        else if (dungTich<200&&dungTich>100){
-            f= (float) (giaTri*0.3);
-        }
-        else {
-            f= (float) (giaTri*0.5);
+        if (dungTich < 100) {
+            f = (float) (giaTri * 0.1);
+        } else if (dungTich < 200 && dungTich > 100) {
+            f = (float) (giaTri * 0.3);
+        } else {
+            f = (float) (giaTri * 0.5);
         }
         return f;
     }
 
-    public void nhap(Vehicle xe){
+    public void nhap(Vehicle xe) {
         Scanner scanStr = new Scanner(System.in);
         Scanner scanDou = new Scanner(System.in);
         Scanner scanInt = new Scanner(System.in);
@@ -85,19 +83,19 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return tenChuXe+"\t\t\t\t"
-                +loaiXe+"\t\t\t\t"
-                +dungTich+"\t\t\t\t"
-                +df.format(giaTri)+"\t\t\t\t"
-                +thuePhaiNop(dungTich,giaTri);
+        return tenChuXe + "\t\t\t\t"
+                + loaiXe + "\t\t\t\t"
+                + dungTich + "\t\t\t\t"
+                + df.format(giaTri) + "\t\t\t\t"
+                + thuePhaiNop(dungTich, giaTri);
     }
 
-    public void xuat(){
+    public void xuat() {
         System.out.println("Chu xe\t\t\t\t"
-                +"Loai xe\t\t\t\t"
-                +"Dung tich\t\t\t\t"
-                +"Gia tri\t\t\t\t"
-                +"Thue phai nop");
+                + "Loai xe\t\t\t\t"
+                + "Dung tich\t\t\t\t"
+                + "Gia tri\t\t\t\t"
+                + "Thue phai nop");
         toString();
     }
 
